@@ -14,6 +14,11 @@ import Chest from "/.DO_NOT_TOUCH/classes/Chest.js";
 
 export default class PlayScene extends Phaser.Scene {
   preload() {
+    this.load.script(
+      "webfont",
+      "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+    );
+
     this.load.image("background", "/.DO_NOT_TOUCH/assets/background.png");
 
     // Load the pet's spritesheet
